@@ -369,10 +369,6 @@ export default {
       erase();
     },
 
-    fetchIPAddress() {
-        this.animateValue(); // Start animation after data is fetched
-    },
-
     startMatrixAnimation() {
       const baseSentence = " you trust this QR code?"; // Added space before 'you'
       const words = ["Could", "Would", "Should"];
@@ -416,7 +412,7 @@ export default {
   },
 
   mounted() {
-    this.fetchIPAddress();
+    this.animateValue();
     setTimeout(this.startQRCodeGeneration, 10000);
     setTimeout(() => {
       this.showMatrixEffect = true;
