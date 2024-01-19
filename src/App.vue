@@ -73,7 +73,7 @@ export default {
       info: [
         {
           label: "IP Address:",
-          value: "",
+          value: "128.187.104.0",
           animatedValue: "",
           cursorVisible: true,
           cursorBlinking: false,
@@ -81,7 +81,7 @@ export default {
         },
         {
           label: "City:",
-          value: "",
+          value: "Provo",
           animatedValue: "",
           cursorVisible: false,
           cursorBlinking: false,
@@ -89,7 +89,7 @@ export default {
         },
         {
           label: "Region:",
-          value: "",
+          value: "Utah",
           animatedValue: "",
           cursorVisible: false,
           cursorBlinking: false,
@@ -97,7 +97,7 @@ export default {
         },
         {
           label: "ZIP Code:",
-          value: "",
+          value: "84602",
           animatedValue: "",
           cursorVisible: false,
           cursorBlinking: false,
@@ -105,7 +105,7 @@ export default {
         },
         {
           label: "Country:",
-          value: "",
+          value: "USA",
           animatedValue: "",
           cursorVisible: false,
           cursorBlinking: false,
@@ -369,21 +369,7 @@ export default {
     },
 
     fetchIPAddress() {
-      fetch("/api/json/")
-        .then((response) => response.json())
-        .then((data) => {
-          // Assign fetched data to info array values
-          this.info[0].value = data.ip;
-          this.info[1].value = data.city;
-          this.info[2].value = data.region;
-          this.info[3].value = data.postal;
-          this.info[4].value = data.country;
-          // ... set other values
-          this.animateValue(); // Start animation after data is fetched
-        })
-        .catch((error) => {
-          console.error("Error fetching IP:", error);
-        });
+        this.animateValue(); // Start animation after data is fetched
     },
 
     startMatrixAnimation() {
