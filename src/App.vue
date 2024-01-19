@@ -370,17 +370,7 @@ export default {
 
     fetchIPAddress() {
       fetch("/api/json/")
-        .then((response) => response.json())
-        .then((data) => {
-          // Assign fetched data to info array values
-          this.info[0].value = data.ip;
-          this.info[1].value = data.city;
-          this.info[2].value = data.region;
-          this.info[3].value = data.postal;
-          this.info[4].value = data.country;
-          // ... set other values
-          this.animateValue(); // Start animation after data is fetched
-        })
+        this.animateValue(); // Start animation after data is fetched
         .catch((error) => {
           console.error("Error fetching IP:", error);
         });
