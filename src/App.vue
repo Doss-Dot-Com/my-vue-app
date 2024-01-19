@@ -98,6 +98,7 @@ export default {
         {
           label: "ZIP Code:",
           value: "84602",
+          value: "84602",
           animatedValue: "",
           cursorVisible: false,
           cursorBlinking: false,
