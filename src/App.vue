@@ -73,7 +73,7 @@ export default {
       info: [
         {
           label: "IP Address:",
-          value: "",
+          value: "128.187.104.0",
           animatedValue: "",
           cursorVisible: true,
           cursorBlinking: false,
@@ -81,7 +81,7 @@ export default {
         },
         {
           label: "City:",
-          value: "",
+          value: "Provo",
           animatedValue: "",
           cursorVisible: false,
           cursorBlinking: false,
@@ -89,7 +89,7 @@ export default {
         },
         {
           label: "Region:",
-          value: "",
+          value: "UTAH",
           animatedValue: "",
           cursorVisible: false,
           cursorBlinking: false,
@@ -97,7 +97,7 @@ export default {
         },
         {
           label: "ZIP Code:",
-          value: "",
+          value: "84602",
           animatedValue: "",
           cursorVisible: false,
           cursorBlinking: false,
@@ -105,7 +105,7 @@ export default {
         },
         {
           label: "Country:",
-          value: "",
+          value: "US",
           animatedValue: "",
           cursorVisible: false,
           cursorBlinking: false,
